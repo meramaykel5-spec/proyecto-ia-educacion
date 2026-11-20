@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA y educación | Unidad Educativa La Unión</title>
+<style>
+:root{--navy:#101b3d;--blue:#2563eb;--cyan:#38bdf8;--ink:#17233f;--muted:#64748b;--paper:#f4f7fc;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(130deg,#0b1534,#173b75 65%,#087eaa);color:white;padding:24px max(5vw,20px) 64px}
+nav{max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.04em}.navlinks{display:flex;gap:14px;flex-wrap:wrap}.navlinks a{color:#e6f4ff;text-decoration:none;font-size:.9rem}
+.hero{max-width:1150px;margin:54px auto 0;display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:center}
+.eyebrow{color:#a5e7ff;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}
+h1{font-size:clamp(2.2rem,5vw,4.4rem);line-height:1.05;margin:14px 0 18px}
+.hero p{max-width:650px;color:#dcecff;font-size:1.08rem}
+.hero-art{min-height:250px;border:1px solid #8bcfff66;border-radius:28px;background:radial-gradient(circle at 50% 45%,#38bdf866,transparent 55%),linear-gradient(145deg,#ffffff14,#ffffff05);display:grid;place-items:center;font-size:6rem}
+.pill{display:inline-block;background:#dff5ff;color:#075985;padding:7px 13px;border-radius:99px;font-size:.82rem;font-weight:700}
+main{max-width:1150px;margin:auto;padding:0 20px 70px}
+section{padding:52px 0;scroll-margin-top:20px}.section-head{margin-bottom:24px}.section-head h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:0 0 8px;color:#10234c}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:white;border:1px solid #e2e8f0;border-radius:18px;padding:20px;box-shadow:0 8px 24px #0f172a08}
+.card h3{margin:0 0 8px;color:#173b75}.card p{margin:7px 0;color:#42516a}.card .small{font-size:.9rem;color:var(--muted)}
+.intro-box{background:white;border-left:5px solid var(--cyan);padding:20px 24px;border-radius:12px;box-shadow:0 8px 24px #0f172a08}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.good{border-top:4px solid #16a34a}.bad{border-top:4px solid #e08b27}
+ul{padding-left:21px}li{margin:6px 0}
+.subject-number{color:#0ea5e9;font-weight:800;font-size:.8rem;letter-spacing:.08em}
+.subject-card h3{font-size:1.08rem;min-height:2.5em}
+.subject-card strong{color:#173b75}
+.quiz-question{padding:16px 0;border-bottom:1px solid #e2e8f0}.quiz-question p{font-weight:700;margin:0 0 8px}.quiz-question label{display:block;margin:6px 0;color:#42516a}
+button{border:0;border-radius:10px;padding:12px 18px;background:var(--blue);color:white;font-weight:700;cursor:pointer;margin-top:14px}
+button:hover{background:#1748b5}.result{font-weight:700;margin-top:14px}
+footer{background:#0b1534;color:#dcecff;text-align:center;padding:30px 20px}footer p{margin:5px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;margin-top:34px}.hero-art{min-height:170px;font-size:4rem}.two{grid-template-columns:1fr}.navlinks{gap:9px}.navlinks a{font-size:.82rem}}
+
+.visual-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:22px 0}.visual-tile{background:linear-gradient(145deg,#e0f2fe,#f8fbff);border:1px solid #cfe8fb;border-radius:18px;padding:16px;text-align:center;color:#173b75}.visual-tile svg{width:100%;height:90px;display:block;margin:0 auto 8px}.visual-tile b{display:block}.subject-card{position:relative;overflow:hidden}.subject-visual{width:54px;height:54px;border-radius:16px;background:linear-gradient(145deg,#dff5ff,#dbeafe);display:grid;place-items:center;font-size:1.8rem;margin-bottom:10px}.subject-card .subject-number{display:block}.hero-art{padding:18px}.hero-art svg{width:min(100%,330px);height:auto;filter:drop-shadow(0 14px 20px #02081755)}.section-head .subnote{font-size:.92rem;color:#64748b}
+</style>
+</head>
+<body>
+<header id="inicio">
+<nav>
+  <div class="brand">✦ LA UNIÓN · PROYECTO INTERDISCIPLINAR</div>
+  <div class="navlinks">
+    <a href="#que-es">¿Qué es IA?</a><a href="#educacion">Educación</a><a href="#asignaturas">Asignaturas</a><a href="#indicaciones-docentes">Temas docentes</a><a href="#responsable">Uso responsable</a><a href="#actividad">Actividad</a>
+  </div>
+</nav>
+<div class="hero">
+  <div>
+    <div class="eyebrow">Unidad Educativa «La Unión» · La Unión, Quinindé, Esmeraldas</div>
+    <h1>La inteligencia artificial y el impacto en la educación</h1>
+    <p>Innovación, aprendizaje y transformación del conocimiento en la era digital.</p>
+    <span class="pill">Segundo Técnico · Paralelo A</span>
+    <p><strong>Integrantes:</strong> Liz Loor · Maykel Mera · Cristhofer Gahón · Ginger Cantos</p>
+  </div>
+  <div class="hero-art" aria-label="Ilustración de inteligencia artificial aplicada al aprendizaje"><svg viewBox="0 0 360 270" role="img" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="screen" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7dd3fc"/><stop offset="1" stop-color="#2563eb"/></linearGradient><linearGradient id="book" x1="0" x2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dbeafe"/></linearGradient></defs><circle cx="180" cy="125" r="112" fill="#38bdf8" opacity=".13"/><path d="M45 210h270" stroke="#bae6fd" stroke-width="5" stroke-linecap="round"/><rect x="92" y="52" width="176" height="126" rx="15" fill="#e0f2fe" stroke="#bae6fd" stroke-width="5"/><rect x="103" y="63" width="154" height="102" rx="8" fill="url(#screen)"/><path d="M76 188h208l-18 20H94z" fill="#bfdbfe"/><rect x="145" y="91" width="70" height="48" rx="12" fill="#0b2453" opacity=".9"/><path d="M160 109h40M160 120h25" stroke="#7dd3fc" stroke-width="4" stroke-linecap="round"/><circle cx="180" cy="82" r="5" fill="#fff"/><path d="M180 72v-9m-9 19-7-6m25 6 7-6" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M50 90l10 10 18-22M291 91l10 10 18-22" fill="none" stroke="#a5f3fc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M46 157c18-17 34-17 52 0v47c-18-17-34-17-52 0zm52 0c18-17 34-17 52 0v47c-18-17-34-17-52 0z" fill="url(#book)" stroke="#93c5fd" stroke-width="3"/><path d="M58 171h27m-27 10h27m-27 10h20" stroke="#60a5fa" stroke-width="3" stroke-linecap="round"/><circle cx="300" cy="183" r="27" fill="#dbeafe" stroke="#7dd3fc" stroke-width="3"/><path d="M288 183h24m-12-12v24" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/><path d="M270 43l5 11 11 5-11 5-5 11-5-11-11-5 11-5z" fill="#bae6fd"/><path d="M77 35l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#7dd3fc"/></svg></div>
+</div>
+</header>
+
+<main>
+<section id="que-es">
+ <div class="section-head"><h2>¿Qué es la inteligencia artificial?</h2><p>Una herramienta tecnológica que puede apoyar distintas actividades humanas.</p></div>
+ <div class="intro-box">
+  <p>La inteligencia artificial (IA) es una tecnología que permite que los sistemas informáticos realicen tareas que normalmente requieren capacidades humanas, como reconocer patrones, comprender lenguaje, analizar información y generar respuestas.</p>
+  <p>Su desarrollo se relaciona con los avances de la informática, las matemáticas y el estudio de cómo representar el aprendizaje y el razonamiento mediante máquinas. Actualmente se utiliza en asistentes virtuales, traductores, buscadores, recomendaciones y herramientas educativas.</p>
+ </div>
+ <div class="grid" style="margin-top:16px">
+  <article class="card"><h3>Características</h3><p>Procesa datos, identifica patrones, genera predicciones o contenidos y puede mejorar su desempeño mediante modelos entrenados.</p></article>
+  <article class="card"><h3>Tipos y ejemplos</h3><p>Hay sistemas especializados en tareas concretas, como traducción, reconocimiento de imágenes, asistentes conversacionales y análisis de datos.</p></article>
+  <article class="card"><h3>Herramientas conocidas</h3><p>ChatGPT, Gemini, Microsoft Copilot, traductores automáticos y plataformas de aprendizaje adaptativo.</p></article>
+ </div>
+</section>
+
+<section id="educacion">
+ <div class="section-head"><h2>La IA en la educación</h2><p>Puede complementar el trabajo de estudiantes y docentes, pero no sustituye el aprendizaje ni el criterio humano.</p></div>
+ <div class="grid">
+  <article class="card"><h3>Para estudiantes</h3><p>Puede explicar un tema con otras palabras, proponer ejercicios, ayudar a practicar idiomas y organizar ideas para estudiar.</p></article>
+  <article class="card"><h3>Para docentes</h3><p>Puede apoyar la preparación de materiales, la creación de actividades y la adaptación de explicaciones a distintas necesidades.</p></article>
+  <article class="card"><h3>Limitaciones</h3><p>Puede equivocarse, presentar información desactualizada o dar respuestas incompletas. Siempre hay que contrastar con fuentes confiables.</p></article>
+ </div>
+</section>
+
+<div class="visual-strip" aria-label="Ilustraciones de usos educativos de la inteligencia artificial"><div class="visual-tile"><svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg"><rect x="43" y="12" width="74" height="60" rx="8" fill="#2563eb"/><rect x="50" y="19" width="60" height="45" rx="4" fill="#e0f2fe"/><path d="M61 33h38M61 43h28M61 53h34" stroke="#0ea5e9" stroke-width="4" stroke-linecap="round"/><path d="M28 76h104" stroke="#173b75" stroke-width="5" stroke-linecap="round"/></svg><b>Aprendizaje digital</b><span>Explicaciones y práctica</span></div><div class="visual-tile"><svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg"><path d="M25 24h45v48H25zM70 24h45v48H70z" fill="#fff" stroke="#60a5fa" stroke-width="3"/><path d="M35 36h25M35 46h25M80 36h25M80 46h25" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/><path d="M80 10l5 9 10 2-8 7 2 10-9-5-9 5 2-10-8-7 10-2z" fill="#fbbf24"/></svg><b>Lectura y escritura</b><span>Ideas, textos y creatividad</span></div><div class="visual-tile"><svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg"><circle cx="80" cy="45" r="30" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/><path d="M80 22v46M57 45h46M64 29l32 32M96 29 64 61" stroke="#0ea5e9" stroke-width="3"/><circle cx="80" cy="45" r="8" fill="#2563eb"/></svg><b>Ciencia y tecnología</b><span>Simulaciones y análisis</span></div></div>
+
+<section id="asignaturas">
+ <div class="section-head"><h2>La IA en las 19 asignaturas</h2><p>Explora cómo se relaciona la inteligencia artificial con cada materia, sus aplicaciones y ejemplos de aprendizaje.</p><p class="subnote">Cada tarjeta incluye una ilustración, una explicación ampliada y una actividad para poner en práctica lo aprendido.</p></div>
+ <div class="grid">
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 01</div><div class="subject-visual" aria-hidden="true">📐</div><h3>Matemáticas</h3><p><strong>Relación:</strong> ayuda a resolver operaciones, interpretar datos y representar funciones.</p><p><strong>Aplicación:</strong> asistentes matemáticos y programas de gráficos.</p><p><strong>Actividad:</strong> pedir una explicación paso a paso de un problema y comprobarla en el cuaderno.</p><p><strong>Ampliación:</strong> La IA puede mostrar distintas estrategias para resolver ecuaciones, porcentajes, geometría y estadística. También ayuda a construir tablas y gráficos para interpretar resultados. El estudiante debe revisar cada operación y explicar por qué el procedimiento funciona.</p><p class="small"><strong>Reflexión:</strong> entender el procedimiento es más importante que copiar el resultado.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 02</div><div class="subject-visual" aria-hidden="true">📚</div><h3>Lengua y Literatura</h3><p><strong>Relación:</strong> apoya la comprensión lectora, la escritura y el análisis de textos.</p><p><strong>Aplicación:</strong> asistentes de escritura y análisis de lenguaje.</p><p><strong>Actividad:</strong> comparar un borrador propio con sugerencias de claridad y ortografía.</p><p><strong>Ampliación:</strong> En esta área puede resumir textos, explicar vocabulario, reconocer la estructura de un cuento y proponer correcciones. Es útil para comparar borradores y practicar comprensión lectora, siempre conservando las ideas propias y citando las fuentes consultadas.</p><p class="small"><strong>Reflexión:</strong> la IA puede sugerir mejoras, pero la voz y las ideas deben ser nuestras.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 03</div><div class="subject-visual" aria-hidden="true">🏛️</div><h3>Historia</h3><p><strong>Relación:</strong> facilita organizar fechas, procesos y fuentes históricas.</p><p><strong>Aplicación:</strong> buscadores, organizadores de cronologías y asistentes de investigación.</p><p><strong>Actividad:</strong> elaborar una línea de tiempo y verificar cada fecha en fuentes históricas.</p><p><strong>Ampliación:</strong> Las herramientas digitales pueden ayudar a ordenar acontecimientos en líneas de tiempo, comparar mapas históricos y resumir documentos. La información debe contrastarse con libros, archivos y fuentes confiables para evitar fechas o datos inventados.</p><p class="small"><strong>Reflexión:</strong> es necesario contrastar la información y reconocer distintas perspectivas.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 04</div><div class="subject-visual" aria-hidden="true">⚛️</div><h3>Física</h3><p><strong>Relación:</strong> ayuda a estudiar fenómenos, fórmulas y resultados de experimentos.</p><p><strong>Aplicación:</strong> simuladores y herramientas de análisis de datos.</p><p><strong>Actividad:</strong> solicitar una explicación de las leyes del movimiento y representarlas con un ejemplo.</p><p><strong>Ampliación:</strong> Los simuladores permiten observar movimientos, fuerzas, energía, electricidad y ondas modificando variables. La IA también puede ayudar a interpretar mediciones, pero las unidades, fórmulas y resultados deben comprobarse con las leyes físicas estudiadas.</p><p class="small"><strong>Reflexión:</strong> los modelos digitales complementan la observación y la experimentación.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 05</div><div class="subject-visual" aria-hidden="true">🧪</div><h3>Química</h3><p><strong>Relación:</strong> permite visualizar estructuras moleculares y comprender reacciones.</p><p><strong>Aplicación:</strong> simuladores de moléculas y recursos digitales de química.</p><p><strong>Actividad:</strong> crear un esquema de una molécula y revisar sus características con el texto escolar.</p><p><strong>Ampliación:</strong> La IA puede representar modelos de átomos y moléculas, apoyar el balanceo de ecuaciones y explicar cambios físicos y químicos. Las simulaciones permiten anticipar observaciones, pero no reemplazan la experimentación segura y supervisada.</p><p class="small"><strong>Reflexión:</strong> las simulaciones ayudan a comprender conceptos que no siempre se observan directamente.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 06</div><div class="subject-visual" aria-hidden="true">🧬</div><h3>Biología</h3><p><strong>Relación:</strong> apoya el estudio de los seres vivos, el cuerpo humano y el ambiente.</p><p><strong>Aplicación:</strong> análisis de imágenes biológicas y recursos interactivos.</p><p><strong>Actividad:</strong> elaborar una ficha sobre una especie y verificar sus datos en fuentes científicas.</p><p><strong>Ampliación:</strong> Puede ayudar a estudiar células, ecosistemas, genética y anatomía mediante imágenes etiquetadas y modelos interactivos. También facilita organizar información sobre biodiversidad y conservación, verificando los datos con materiales científicos.</p><p class="small"><strong>Reflexión:</strong> la IA puede apoyar la investigación y el cuidado del ambiente.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 07</div><div class="subject-visual" aria-hidden="true">💡</div><h3>Emprendimiento y Gestión</h3><p><strong>Relación:</strong> ayuda a identificar necesidades y organizar ideas de negocio.</p><p><strong>Aplicación:</strong> asistentes para lluvia de ideas, planificación y análisis de clientes.</p><p><strong>Actividad:</strong> diseñar una propuesta de tutorías educativas apoyadas por IA.</p><p><strong>Ampliación:</strong> Puede apoyar la identificación de problemas de una comunidad, la lluvia de ideas, el análisis de posibles clientes y la planificación de costos. Una propuesta debe validarse con necesidades reales, presupuesto y decisiones responsables.</p><p class="small"><strong>Reflexión:</strong> una idea innovadora debe responder a una necesidad real y ser viable.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 08</div><div class="subject-visual" aria-hidden="true">🧾</div><h3>Paquetes Contables</h3><p><strong>Relación:</strong> facilita aprender procesos de registro y organización de datos contables.</p><p><strong>Aplicación:</strong> hojas de cálculo y sistemas contables con funciones automáticas.</p><p><strong>Actividad:</strong> practicar la clasificación de operaciones en una tabla de ejemplo.</p><p><strong>Ampliación:</strong> Los programas contables automatizan tareas como registrar ventas, organizar compras, controlar inventarios y generar reportes. Algunas herramientas inteligentes ayudan a clasificar información o detectar datos inusuales, pero el usuario debe verificar comprobantes y registros.</p><p class="small"><strong>Reflexión:</strong> la automatización ahorra tiempo, pero los registros deben revisarse.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 09</div><div class="subject-visual" aria-hidden="true">🌐</div><h3>Inglés</h3><p><strong>Relación:</strong> permite practicar vocabulario, gramática y comprensión.</p><p><strong>Aplicación:</strong> traductores, asistentes de conversación y herramientas de pronunciación.</p><p><strong>Actividad:</strong> practicar un diálogo breve y revisar el vocabulario nuevo.</p><p><strong>Ampliación:</strong> Los asistentes conversacionales permiten practicar diálogos, escuchar pronunciaciones, aprender vocabulario y recibir explicaciones gramaticales. Conviene repetir las frases, crear ejemplos propios y comprobar que la traducción conserve el sentido.</p><p class="small"><strong>Reflexión:</strong> practicar activamente ayuda más que depender de una traducción automática.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 10</div><div class="subject-visual" aria-hidden="true">🎨</div><h3>Educación Cultural y Artística (ECA)</h3><p><strong>Relación:</strong> apoya la exploración de ideas y la creación de recursos visuales.</p><p><strong>Aplicación:</strong> herramientas de diseño y generación de imágenes.</p><p><strong>Actividad:</strong> crear un afiche sobre el uso responsable de la tecnología y señalar los recursos utilizados.</p><p><strong>Ampliación:</strong> La IA puede servir para explorar estilos, crear bocetos, combinar ideas y planificar afiches o presentaciones. El estudiante debe aportar su creatividad, reconocer cuándo utilizó herramientas generativas y respetar las obras de otras personas.</p><p class="small"><strong>Reflexión:</strong> la creatividad humana y el respeto a los derechos de autor siguen siendo esenciales.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 11</div><div class="subject-visual" aria-hidden="true">⚽</div><h3>Educación Física</h3><p><strong>Relación:</strong> puede apoyar el aprendizaje de técnicas deportivas y el seguimiento del rendimiento.</p><p><strong>Aplicación:</strong> aplicaciones de análisis de movimiento y registro de actividad.</p><p><strong>Actividad:</strong> analizar las reglas y técnicas básicas de un deporte mediante recursos educativos.</p><p><strong>Ampliación:</strong> Los recursos inteligentes pueden explicar reglas deportivas, mostrar secuencias técnicas y registrar datos generales de actividad. La tecnología debe utilizarse como apoyo educativo, respetando el descanso, la seguridad y las indicaciones del docente.</p><p class="small"><strong>Reflexión:</strong> la tecnología acompaña la práctica, pero no reemplaza el movimiento ni al docente.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 12</div><div class="subject-visual" aria-hidden="true">💭</div><h3>Filosofía</h3><p><strong>Relación:</strong> permite debatir sobre conocimiento, ética y decisiones tecnológicas.</p><p><strong>Aplicación:</strong> asistentes para comparar argumentos y organizar debates.</p><p><strong>Actividad:</strong> debatir si una respuesta generada por IA siempre puede considerarse verdadera.</p><p><strong>Ampliación:</strong> La IA puede presentar argumentos diferentes sobre preguntas relacionadas con la verdad, la libertad, la justicia y la tecnología. Comparar esas respuestas ayuda a practicar el razonamiento, detectar contradicciones y formular conclusiones propias.</p><p class="small"><strong>Reflexión:</strong> pensar críticamente es necesario para evaluar las respuestas de cualquier tecnología.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 13</div><div class="subject-visual" aria-hidden="true">🤝</div><h3>Ciudadanía</h3><p><strong>Relación:</strong> ayuda a comprender los derechos digitales, la privacidad y la inclusión.</p><p><strong>Aplicación:</strong> recursos de alfabetización digital y accesibilidad.</p><p><strong>Actividad:</strong> identificar qué datos personales no se deben compartir en herramientas digitales.</p><p><strong>Ampliación:</strong> Puede explicar conceptos de participación, derechos, convivencia y ciudadanía digital. También permite analizar ejemplos de desinformación y privacidad, promoviendo el respeto, la inclusión y el uso responsable de los datos personales.</p><p class="small"><strong>Reflexión:</strong> usar tecnología también implica respetar los derechos de otras personas.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 14</div><div class="subject-visual" aria-hidden="true">📊</div><h3>Tributación</h3><p><strong>Relación:</strong> apoya el aprendizaje de procesos tributarios y facturación electrónica.</p><p><strong>Aplicación:</strong> sistemas de gestión documental y asistentes para explicar conceptos tributarios.</p><p><strong>Actividad:</strong> organizar un ejemplo didáctico de los datos que contiene una factura.</p><p><strong>Ampliación:</strong> Los sistemas digitales facilitan organizar comprobantes, consultar información y preparar procesos relacionados con facturación y obligaciones tributarias. La IA puede explicar términos generales, pero las declaraciones y normas deben verificarse en fuentes oficiales actualizadas.</p><p class="small"><strong>Reflexión:</strong> la información tributaria debe comprobarse con fuentes oficiales.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 15</div><div class="subject-visual" aria-hidden="true">📒</div><h3>Gestión Contable</h3><p><strong>Relación:</strong> facilita clasificar información y comprender operaciones financieras.</p><p><strong>Aplicación:</strong> hojas de cálculo y programas de gestión.</p><p><strong>Actividad:</strong> clasificar operaciones ficticias y revisar si están ubicadas correctamente.</p><p><strong>Ampliación:</strong> Puede apoyar la clasificación de transacciones, la revisión de registros y la elaboración de reportes. Un sistema puede señalar posibles inconsistencias, pero la persona responsable debe comprobar documentos, cuentas y criterios contables.</p><p class="small"><strong>Reflexión:</strong> la IA ayuda a organizar datos, pero se necesita criterio contable.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 16</div><div class="subject-visual" aria-hidden="true">🗂️</div><h3>Contabilidad General</h3><p><strong>Relación:</strong> apoya el estudio de registros, cuentas y estados financieros.</p><p><strong>Aplicación:</strong> programas contables y asistentes para explicar conceptos.</p><p><strong>Actividad:</strong> practicar un registro contable sencillo con datos ficticios.</p><p><strong>Ampliación:</strong> Los asistentes pueden explicar activos, pasivos, patrimonio, ingresos y gastos, además de practicar el registro en el diario y el mayor. Los ejercicios con datos ficticios ayudan a comprender cómo cada operación afecta las cuentas.</p><p class="small"><strong>Reflexión:</strong> comprender cada movimiento permite detectar errores y tomar mejores decisiones.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 17</div><div class="subject-visual" aria-hidden="true">📈</div><h3>Gestión y Control Financiero</h3><p><strong>Relación:</strong> facilita estudiar presupuestos, proyecciones y análisis financiero.</p><p><strong>Aplicación:</strong> hojas de cálculo y herramientas de análisis de datos.</p><p><strong>Actividad:</strong> elaborar un presupuesto escolar ficticio y comparar ingresos y gastos.</p><p><strong>Ampliación:</strong> Las herramientas de análisis pueden ordenar presupuestos, comparar ingresos y gastos y representar tendencias mediante gráficos. Sus proyecciones dependen de los datos utilizados, por eso deben revisarse los supuestos antes de tomar decisiones.</p><p class="small"><strong>Reflexión:</strong> las proyecciones son estimaciones y deben revisarse antes de decidir.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 18</div><div class="subject-visual" aria-hidden="true">🔬</div><h3>Módulo Práctico Experimental</h3><p><strong>Relación:</strong> permite planificar, registrar y analizar experiencias educativas.</p><p><strong>Aplicación:</strong> asistentes para organizar procedimientos y tablas de resultados.</p><p><strong>Actividad:</strong> documentar una experiencia sencilla, sus observaciones y conclusiones.</p><p><strong>Ampliación:</strong> La IA puede ayudar a formular preguntas, organizar una secuencia de trabajo y diseñar tablas para registrar observaciones. Los datos deben obtenerse de la actividad realizada; nunca se deben presentar resultados inventados como si fueran experimentales.</p><p class="small"><strong>Reflexión:</strong> los resultados deben provenir de la experiencia real y no inventarse.</p></article>
+  <article class="card subject-card"><div class="subject-number">ASIGNATURA 19</div><div class="subject-visual" aria-hidden="true">💻</div><h3>Informática</h3><p><strong>Relación:</strong> permite aprender a diseñar páginas, manejar datos y comprender herramientas digitales.</p><p><strong>Aplicación:</strong> asistentes de programación, diseño web y creación de recursos digitales.</p><p><strong>Actividad:</strong> diseñar y probar una página web educativa como este proyecto.</p><p><strong>Ampliación:</strong> Los asistentes de programación pueden explicar código, detectar errores y proponer mejoras para páginas web. También ayudan a comprender bases de datos, redes y seguridad digital. Es importante probar el programa y entender cada parte antes de utilizarla.</p><p class="small"><strong>Reflexión:</strong> la IA puede acelerar el trabajo, pero debemos entender y revisar lo que construimos.</p></article>
+ </div>
+</section>
+
+
+<section id="indicaciones-docentes">
+ <div class="section-head"><h2>Temas especiales indicados por nuestros docentes</h2><p>Contenidos desarrollados según las indicaciones recibidas para cinco asignaturas.</p></div>
+
+ <article class="card" style="margin-bottom:18px">
+  <h3>Lengua y Literatura: la IA en la lectura, escritura y comunicación</h3>
+  <p><strong>Introducción.</strong> La inteligencia artificial está cambiando la manera en que leemos, escribimos y nos comunicamos. Puede ayudarnos a comprender textos, corregir errores y expresar ideas con mayor claridad.</p>
+  <p><strong>Desarrollo.</strong> En la lectura, algunas herramientas identifican ideas principales, explican palabras difíciles y resumen textos. En la escritura, pueden sugerir mejoras de ortografía, gramática y organización. En la comunicación, permiten traducir idiomas, convertir voz en texto y responder preguntas. Sin embargo, sus resultados deben revisarse porque pueden contener errores.</p>
+  <p><strong>Aplicaciones y herramientas.</strong> Correctores ortográficos, traductores automáticos, lectores de texto, asistentes de escritura y modelos conversacionales como ChatGPT o Gemini.</p>
+  <p><strong>Ejemplo práctico.</strong> Un estudiante escribe un párrafo sobre el cuidado del ambiente, solicita sugerencias para mejorar la claridad y luego decide cuáles aplicar, manteniendo sus propias ideas.</p>
+  <div class="intro-box" style="margin:12px 0"><strong>Recurso visual:</strong> 📖 Lectura → 💡 comprensión → ✍️ escritura → 💬 comunicación. La IA acompaña cada etapa, pero el estudiante conserva el criterio y la autoría.</div>
+  <p><strong>Conclusión.</strong> La IA puede fortalecer la comunicación y el aprendizaje si se usa como apoyo. Leer con atención, pensar y escribir con nuestras propias palabras sigue siendo fundamental.</p>
+ </article>
+
+ <article class="card" style="margin-bottom:18px">
+  <h3>Física: principios físicos y tecnológicos de los dispositivos inteligentes</h3>
+  <p>Los dispositivos inteligentes son aparatos electrónicos capaces de recopilar información, procesarla, comunicarse con otros equipos y realizar acciones automáticamente o mediante instrucciones. Algunos ejemplos son teléfonos, relojes y televisores inteligentes, asistentes virtuales y robots.</p>
+  <div class="grid">
+   <div><strong>Principios físicos</strong><ul>
+    <li><b>Electricidad:</b> el movimiento de cargas permite funcionar a los circuitos.</li>
+    <li><b>Electromagnetismo y ondas:</b> hacen posible la comunicación inalámbrica mediante Wi-Fi, Bluetooth y redes móviles.</li>
+    <li><b>Óptica:</b> interviene en cámaras, pantallas y sensores de luz.</li>
+    <li><b>Acústica:</b> permite captar y reproducir sonidos con micrófonos y altavoces.</li>
+    <li><b>Termodinámica:</b> estudia el calor que generan los componentes y cómo se disipa.</li>
+    <li><b>Mecánica:</b> acelerómetros y giroscopios detectan movimiento y orientación.</li>
+   </ul></div>
+   <div><strong>Principios tecnológicos</strong><ul>
+    <li><b>Microprocesadores:</b> ejecutan instrucciones y procesan datos.</li>
+    <li><b>Sensores:</b> capturan temperatura, luz, movimiento y sonido.</li>
+    <li><b>Inteligencia artificial:</b> reconoce patrones y apoya tareas inteligentes.</li>
+    <li><b>Internet de las cosas (IoT):</b> conecta dispositivos para intercambiar información.</li>
+    <li><b>Software y conectividad:</b> controlan el equipo y permiten su comunicación.</li>
+    <li><b>Almacenamiento y automatización:</b> guardan datos y ejecutan acciones programadas.</li>
+   </ul></div>
+  </div>
+  <div class="intro-box">📱 <strong>Ejemplo:</strong> un teléfono utiliza electricidad para funcionar, sensores para detectar movimiento y luz, ondas electromagnéticas para conectarse y software para ejecutar aplicaciones.</div>
+ </article>
+
+ <article class="card" style="margin-bottom:18px">
+  <h3>Inglés: AI in everyday life</h3>
+  <p><strong>Introduction.</strong> Artificial intelligence (AI) is part of our everyday life. We use it on smartphones, computers and other smart devices.</p>
+  <p><strong>Development.</strong> AI helps people translate languages, recognize images, use voice assistants, find routes and receive recommendations. In education, students can use AI to practise English, learn vocabulary and understand difficult topics. However, AI can make mistakes, so people must check the information.</p>
+  <p><strong>Practical example.</strong> A student uses an AI assistant to practise a conversation in English. The assistant suggests corrections, and the student repeats the sentences and learns from the feedback.</p>
+  <p><strong>Conclusion.</strong> AI makes some daily tasks easier, but we must use it carefully, protect our personal information and continue thinking for ourselves.</p>
+  <p><strong>Vocabulary:</strong> learning = aprendizaje · smart device = dispositivo inteligente · voice assistant = asistente de voz · privacy = privacidad · reliable information = información confiable.</p>
+ </article>
+
+ <article class="card" style="margin-bottom:18px">
+  <h3>Paquetes Contables: inteligencia artificial y software contable</h3>
+  <p>En Ecuador, los sistemas contables digitales ayudan a organizar la información de un negocio y agilizar tareas administrativas. Entre los programas mencionados en el material de clase se encuentran Sligo, Contífico, Perseo Web, Dora AI, iConta, Antibus e iDrix. Sus características y disponibilidad pueden variar, por lo que es importante consultar sus páginas oficiales.</p>
+  <p><strong>Funciones que pueden ofrecer estos sistemas:</strong> facturación electrónica, organización de inventarios, punto de venta, reportes tributarios, anexos ATS y acceso a información en la nube.</p>
+  <p><strong>Tipos de IA relacionados:</strong> IA débil o especializada, aprendizaje automático (Machine Learning), aprendizaje profundo (Deep Learning) y sistemas basados en reglas.</p>
+  <p><strong>Herramientas y aplicaciones:</strong> asistentes de voz, generadores de imágenes, modelos de lenguaje y sistemas de automatización. En contabilidad pueden apoyar la clasificación de datos, la detección de inconsistencias y la elaboración de reportes, siempre con revisión humana.</p>
+  <div class="intro-box">🧾 <strong>Ejemplo:</strong> un pequeño negocio registra una venta en su sistema, genera una factura electrónica y actualiza su inventario. El encargado revisa que los datos y valores sean correctos antes de emitirla.</div>
+ </article>
+
+ <article class="card">
+  <h3>Química: simulación educativa de dos experimentos</h3>
+  <p>Estas actividades son simulaciones didácticas para comprender conceptos. No sustituyen una práctica real ni las indicaciones del docente.</p>
+  <div class="two">
+   <div class="card">
+    <h4>Experimento 1: indicador natural de pH</h4>
+    <p><strong>Objetivo:</strong> observar cómo un indicador de col morada cambia de color según el tipo de sustancia.</p>
+    <p><strong>Simulación:</strong> selecciona una muestra y observa el resultado esperado.</p>
+    <label for="phSample">Muestra:</label>
+    <select id="phSample" onchange="showPH()"><option value="acid">Jugo de limón (ácido)</option><option value="neutral">Agua (neutra)</option><option value="base">Solución de bicarbonato (básica)</option></select>
+    <div id="phResult" class="intro-box" style="margin-top:12px">Color esperado: rosado o rojizo. Es una sustancia ácida.</div>
+   </div>
+   <div class="card">
+    <h4>Experimento 2: disolución de azúcar</h4>
+    <p><strong>Objetivo:</strong> comprender cómo la temperatura y la agitación influyen en la rapidez de disolución.</p>
+    <p><strong>Simulación:</strong> elige las condiciones del agua.</p>
+    <label for="tempSample">Temperatura:</label>
+    <select id="tempSample"><option value="cold">Fría</option><option value="warm">Tibia</option><option value="hot">Caliente</option></select>
+    <label for="stirSample">Agitación:</label>
+    <select id="stirSample"><option value="still">Sin agitar</option><option value="stir">Agitando</option></select>
+    <button type="button" onclick="showDissolve()">Ver resultado</button>
+    <div id="dissolveResult" class="intro-box" style="margin-top:12px">Selecciona las condiciones y pulsa “Ver resultado”.</div>
+   </div>
+  </div>
+  <p><strong>Conclusión:</strong> los indicadores permiten reconocer características ácido-base y la temperatura y agitación pueden modificar la rapidez con que se disuelve el azúcar.</p>
+ </article>
+</section>
+
+<section id="ventajas">
+ <div class="section-head"><h2>Ventajas y desventajas</h2><p>La IA ofrece oportunidades, pero también requiere cuidado y responsabilidad.</p></div>
+ <div class="two">
+  <article class="card good"><h3>✓ Ventajas</h3><ul><li>Facilita el acceso a la información.</li><li>Puede adaptar explicaciones al ritmo de aprendizaje.</li><li>Ayuda a comprender contenidos complejos.</li><li>Favorece la creación de recursos educativos.</li><li>Apoya la investigación y la resolución de problemas.</li><li>Promueve competencias digitales.</li></ul></article>
+  <article class="card bad"><h3>! Desventajas y riesgos</h3><ul><li>Dependencia excesiva de la tecnología.</li><li>Información incorrecta o poco confiable.</li><li>Menor pensamiento crítico si se copia sin analizar.</li><li>Plagio y falta de originalidad.</li><li>Riesgos para la privacidad.</li><li>Desigualdad en el acceso a la tecnología.</li></ul></article>
+ </div>
+</section>
+
+<section id="responsable">
+ <div class="section-head"><h2>Decálogo del uso ético y responsable</h2><p>Diez recomendaciones para aprovechar la IA sin dejar de aprender.</p></div>
+ <div class="card"><ol>
+  <li>Utilizar la IA como apoyo, no como reemplazo del propio esfuerzo.</li>
+  <li>Verificar la información en libros y fuentes confiables.</li>
+  <li>No copiar respuestas sin leerlas ni comprenderlas.</li>
+  <li>Reconocer cuándo se utilizó una herramienta de IA.</li>
+  <li>Respetar los derechos de autor.</li>
+  <li>No compartir contraseñas ni datos personales.</li>
+  <li>Comparar distintas fuentes antes de aceptar una respuesta.</li>
+  <li>Expresar ideas propias y desarrollar la creatividad.</li>
+  <li>Tratar a los demás con respeto en los espacios digitales.</li>
+  <li>Seguir las indicaciones de docentes y adultos responsables.</li>
+ </ol></div>
+</section>
+
+<section id="actividad">
+ <div class="section-head"><h2>Actividad interactiva: ¿Cuánto sabes de IA?</h2><p>Responde estas preguntas y comprueba lo aprendido.</p></div>
+ <div class="card" id="quiz">
+  <div class="quiz-question"><p>1. ¿Qué significa IA?</p><label><input type="radio" name="q1" value="a"> Información automática</label><label><input type="radio" name="q1" value="b"> Inteligencia artificial</label><label><input type="radio" name="q1" value="c"> Internet avanzado</label></div>
+  <div class="quiz-question"><p>2. ¿Qué debemos hacer con una respuesta de IA?</p><label><input type="radio" name="q2" value="a"> Copiarla siempre</label><label><input type="radio" name="q2" value="b"> Creerla sin revisar</label><label><input type="radio" name="q2" value="c"> Verificarla con fuentes confiables</label></div>
+  <div class="quiz-question"><p>3. ¿La IA reemplaza el pensamiento crítico?</p><label><input type="radio" name="q3" value="a"> No, debemos pensar y decidir por nosotros mismos</label><label><input type="radio" name="q3" value="b"> Sí, completamente</label><label><input type="radio" name="q3" value="c"> Solo en las tareas</label></div>
+  <button onclick="checkQuiz()">Comprobar respuestas</button><div class="result" id="result" aria-live="polite"></div>
+ </div>
+</section>
+
+<section id="conclusiones">
+ <div class="section-head"><h2>Conclusiones y reflexiones</h2></div>
+ <div class="intro-box">
+  <p>La inteligencia artificial está transformando la educación porque ofrece nuevas formas de investigar, practicar, crear y comprender diferentes temas. También puede facilitar el trabajo de los docentes y apoyar a los estudiantes cuando tienen dudas.</p>
+  <p>Sin embargo, la IA puede cometer errores y no debe utilizarse para reemplazar el esfuerzo personal. Es importante verificar la información, proteger los datos personales y respetar los derechos de autor.</p>
+  <p>Como estudiantes, podemos aprovechar estas herramientas para mejorar nuestro aprendizaje, siempre utilizando el pensamiento crítico, la creatividad y la responsabilidad.</p>
+ </div>
+</section>
+
+<section id="fuentes">
+ <div class="section-head"><h2>Fuentes de consulta y créditos</h2><p>Fuentes generales para ampliar y comprobar la información.</p></div>
+ <div class="card">
+  <ul>
+   <li>UNESCO — Inteligencia artificial en la educación: <a href="https://www.unesco.org/es/digital-education/artificial-intelligence" target="_blank" rel="noopener">unesco.org</a>.</li>
+   <li>UNICEF — Orientaciones sobre IA y derechos de la infancia: <a href="https://www.unicef.org/globalinsight/reports/policy-guidance-ai-children" target="_blank" rel="noopener">unicef.org</a>.</li>
+   <li>Material de planificación del proyecto interdisciplinar de la Unidad Educativa «La Unión».</li>
+  </ul>
+  <p><strong>Créditos:</strong> Liz Loor, Maykel Mera, Cristhofer Gahón y Ginger Cantos. Segundo Técnico, paralelo A.</p>
+  <p><strong>Herramientas de apoyo:</strong> recursos digitales y herramientas de inteligencia artificial. Los contenidos deben ser revisados por los integrantes antes de su entrega.</p>
+ </div>
+</section>
+</main>
+<footer>
+ <p><strong>Unidad Educativa «La Unión»</strong></p>
+ <p>La Unión – Quinindé – Esmeraldas · 2026</p>
+ <p>«La inteligencia artificial puede transformar la educación, pero el conocimiento, la creatividad y el pensamiento humano construyen el futuro».</p>
+</footer>
+<script>
+
+function showPH(){
+ const s=document.getElementById("phSample").value;
+ const out=document.getElementById("phResult");
+ const data={
+  acid:"Color esperado: rosado o rojizo. Es una sustancia ácida.",
+  neutral:"Color esperado: violeta o morado. Es una sustancia aproximadamente neutra.",
+  base:"Color esperado: azul verdoso. Es una sustancia básica."
+ };
+ out.textContent=data[s];
+}
+function showDissolve(){
+ const t=document.getElementById("tempSample").value;
+ const a=document.getElementById("stirSample").value;
+ let speed=t==="hot"?"más rápida":t==="warm"?"intermedia":"más lenta";
+ if(a==="stir" && speed!=="más rápida") speed=t==="warm"?"más rápida":"intermedia";
+ else if(a==="stir") speed="más rápida";
+ document.getElementById("dissolveResult").textContent="Resultado ilustrativo: la disolución sería "+speed+". El agua caliente y la agitación suelen acelerar el proceso.";
+}
+
+function checkQuiz(){
+ const answers={q1:"b",q2:"c",q3:"a"};let score=0;
+ for(const [q,a] of Object.entries(answers)){const selected=document.querySelector('input[name="'+q+'"]:checked');if(selected&&selected.value===a)score++;}
+ const result=document.getElementById("result");
+ result.textContent="Obtuviste "+score+" de 3 respuestas correctas. "+(score===3?"¡Excelente trabajo!":"Revisa las secciones y vuelve a intentarlo.");
+}
+</script>
+</body>
+</html>
